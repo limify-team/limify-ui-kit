@@ -8,3 +8,54 @@ body{
 	margin: 0;
 	padding: 0;
 }
+
+:root{
+	--background:           #f9fafb;   /* 220 43% 99% */
+--foreground:           #030712;   /* 222.2 84% 4.9% */
+
+--card:                 #ffffff;   /* 0 0% 100% */
+--card-foreground:      #030712;   /* 222.2 84% 4.9% */
+
+--popover:              #ffffff;   /* 0 0% 100% */
+--popover-foreground:   #030712;   /* 222.2 84% 4.9% */
+
+--primary:              #60a5fa;   /* 213 94% 68% */
+--primary-foreground:   #ffffff;   /* 0 0% 100% */
+
+--secondary:            #b1e5c5;   /* 145 64% 82% */
+--secondary-foreground: #147a4c;   /* 160 84% 24% */
+
+--muted:                #f4f6f8;   /* 210 40% 98% */
+--muted-foreground:     #667085;   /* 215.4 16.3% 46.9% */
+
+--accent:               #c7d8f2;   /* 213 27% 84% */
+--accent-foreground:    #60a5fa;   /* 213 94% 68% */
+--success:               #18794e;   /* 142 76% 36% */
+--success-foreground:    #ffffff;   /* 0 0% 100% */
+
+--warning:               #facc15;   /* 43 96% 56% */
+--warning-foreground:    #1c1917;   /* 20 14.3% 4.1% */
+
+--info:                  #60a5fa;   /* 213 94% 68% */
+--info-foreground:       #ffffff;   /* 0 0% 100% */
+
+--destructive:           #ef4444;   /* 0 84.2% 60.2% */
+--destructive-foreground:#f4f6f8;   /* 210 40% 98% */
+
+--border:                #c7d8f2;   /* 213 27% 84% */
+--input:                 #e2e8f0;   /* 214.3 31.8% 91.4% */
+--ring:                  #030712;   /* 222.2 84% 4.9% */
+--radius:               0.5rem;    /* 8px */
+--sidebar-background:           #fafafa;   /* 0 0% 98% */
+--sidebar-foreground:           #424242;   /* 240 5.3% 26.1% */
+
+--sidebar-primary:              #1a1a1a;   /* 240 5.9% 10% */
+--sidebar-primary-foreground:   #fafafa;   /* 0 0% 98% */
+
+--sidebar-accent:               #f2f2f5;   /* 240 4.8% 95.9% */
+--sidebar-accent-foreground:    #1a1a1a;   /* 240 5.9% 10% */
+
+--sidebar-border:               #d5d9e0;   /* 220 13% 91% */
+--sidebar-ring:                 #3b82f6;   /* 217.2 91.2% 59.8% */
+
+}

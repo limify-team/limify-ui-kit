@@ -1,5 +1,5 @@
-# SavolJavob Platformasi
-
+# Limify Platformasi
+ V
 ## 🎯 Maqsad
 
 Bu platforma turli fanlar bo‘yicha savol-javoblar, testlar, imtihonlar va olimpiadalar o‘tkazish uchun mo‘ljallangan. O‘qituvchilar testlar yaratishi, o‘quvchilar esa ularni yechishi va baho olishi mumkin.

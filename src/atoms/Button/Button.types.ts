@@ -14,6 +14,7 @@ export type ButtonProps = Omit<
   iconDimensions?: { height: number; width: number }
   size?: ButtonSizes
   variant?: ButtonVariants
+  outlined?: boolean
 }
 
 export type ButtonStory = StoryObj<typeof Button>
