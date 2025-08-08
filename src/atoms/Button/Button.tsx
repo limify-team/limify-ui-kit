@@ -9,6 +9,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       className = '',
       disabled = false,
       size = 'medium',
+      outlined = false,
       icon: Icon,
       iconPosition = 'left',
       variant = 'primary',
@@ -20,20 +21,21 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
     const variantStyles = tokens.variants[variant];
     const sizeStyles = tokens.sizes[size];
     const iconStyles = tokens.icon;
-    console.log(variant === 'outlined' ? 'fill-dark-50' : 'fill-white');
+    const outlinedStyles = tokens.outlined[variant];
     return (
       <button
         ref={ref}
         disabled={disabled}
         className={cn(
           tokens.base,
-          variantStyles.base,
           !disabled && variantStyles.active,
           !disabled && variantStyles.hover,
           variantStyles.focus,
           sizeStyles.fontSize,
           sizeStyles.padding,
+          sizeStyles.height,
           disabled && variantStyles.disabled,
+          outlined ? outlinedStyles : variantStyles.base,
           !!Icon && iconStyles.parent,
           !!Icon && !children && 'min-w-0',
           className
@@ -57,7 +59,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
             aria-hidden="true"
             className={cn(
               iconStyles.base,
-              variant === 'outlined' ? 'fill-dark-50' : 'fill-white',
+              outlined ? 'fill-dark-50' : 'fill-white',
               disabled && iconStyles.disabled
             )}
             width={iconDimensions.width}

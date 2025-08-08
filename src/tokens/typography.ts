@@ -1,7 +1,7 @@
 /* Copyright © Accounting Revolution System (ARS) Group and Affiliates:
    This deliverable is considered Developed Content. */
 
-import type { TypographyTokens } from './types'
+import type { TypographyTokens } from './types';
 
 export const typographyTokens: TypographyTokens = {
   fontFamily: {
@@ -35,7 +35,7 @@ export const typographyTokens: TypographyTokens = {
       'body-14': {
         fontSize: '14px',
         fontWeight: 500,
-        lineHeight: '2',
+        lineHeight: '0',
       },
       'body-16': {
         fontSize: '16px',
@@ -125,4 +125,4 @@ export const typographyTokens: TypographyTokens = {
       },
     },
   },
-}
+};

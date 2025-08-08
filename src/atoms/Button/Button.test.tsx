@@ -2,7 +2,7 @@ import { composeStories } from '@storybook/react';
 import { cleanup, render, screen } from '@testing-library/react';
 import * as story from './Button.stories';
 
-const { Default, WithIcon, Outlined, Error, Secondary, LargeSize } =
+const { Default, WithIcon, OutlinedDefault, Danger, Secondary, LargeSize } =
   composeStories(story);
 
 describe('Button component', () => {
@@ -13,7 +13,7 @@ describe('Button component', () => {
     render(<Default />);
     const button = screen.getByText('Button');
     expect(button).toBeInTheDocument();
-    expect(button).toHaveClass('bg-gradient');
+    expect(button).toHaveClass('bg-primary-40 text-white');
   });
 
   it('Render secondary Button correctly', () => {
@@ -24,14 +24,14 @@ describe('Button component', () => {
   });
 
   it('Render outlined Button correctly', () => {
-    render(<Outlined />);
+    render(<OutlinedDefault />);
     const button = screen.getByText('Button');
     expect(button).toBeInTheDocument();
-    expect(button).toHaveClass('border-2 border-dark-50 bg-transparent');
+    expect(button).toHaveClass('border border-gray-30 bg-transparent');
   });
 
   it('Render error Button correctly', () => {
-    render(<Error />);
+    render(<Danger />);
     const button = screen.getByText('Button');
     expect(button).toBeInTheDocument();
     expect(button).toHaveClass('bg-error-50');
