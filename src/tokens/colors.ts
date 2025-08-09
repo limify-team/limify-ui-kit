@@ -1,4 +1,4 @@
-import { ColorShades } from './types';
+import type { ColorShades } from './types'
 
 export const colorsToken: Record<string, ColorShades> = {
   primary: {
@@ -8,7 +8,6 @@ export const colorsToken: Record<string, ColorShades> = {
     40: '#3b82f6',
     50: '#5691c8',
   },
-
   success: {
     10: '#E8F5E9',
     20: '#C8E6C9',
@@ -44,4 +43,4 @@ export const colorsToken: Record<string, ColorShades> = {
     40: '#cbd5e1',
     50: '#374151',
   },
-};
+}

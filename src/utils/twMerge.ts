@@ -1,7 +1,7 @@
-import type { ColorShades, FontStyles } from '@/tokens'
-import { colorsToken, typographyTokens } from '@/tokens'
 import { type ClassValue, clsx } from 'clsx'
 import { extendTailwindMerge } from 'tailwind-merge'
+import type { ColorShades, FontStyles } from '@/tokens'
+import { colorsToken, typographyTokens } from '@/tokens'
 
 export type FontSizeConverterOptions = { splitClassName: boolean }
 export const convertToGroupedFontSizes = (
