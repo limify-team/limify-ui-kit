@@ -55,7 +55,7 @@
     "build": "tsc -b && vite build",
     "test": "vitest run --reporter=basic --reporter=hanging-process",
     "test:coverage": "vitest run --coverage --coverage.enabled",
-    "format": "prettier --check \"**/*.ts\"",
+    "format": "prettier --check \"**/*.{ts,tsx}\"",
     "format:fix": "prettier --check \"**/*.{ts,tsx}\" --write",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
@@ -116,7 +116,7 @@
     "tailwindcss-animate": "^1.0.7",
     "typescript": "^5.8.2",
     "typescript-eslint": "^8.38.0",
-    "vite": "^7.0.4",
+    "vite": "^6.3.5",
     "vite-plugin-dts": "^4.5.4",
     "vite-plugin-svgr": "^4.3.0",
     "vite-tsconfig-paths": "^5.1.4",
