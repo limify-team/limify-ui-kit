@@ -1,7 +1,7 @@
 export const buttonTokens = {
-  base: 'group inline-flex justify-center  items-center rounded-md transition-colors duration-200 select-none whitespace-nowrap font-medium',
+  base: 'group inline-flex justify-between items-center rounded-md transition-colors duration-200 select-none whitespace-nowrap font-medium',
   icon: {
-    base: ' shrink-0',
+    base: 'shrink-0',
     disabled: 'opacity-50 cursor-not-allowed',
     parent: 'justify-between gap-[5px]',
   },
@@ -14,6 +14,8 @@ export const buttonTokens = {
       'border border-secondary-30 text-secondary-50 active:scale-95  hover:bg-secondary-10 disabled:opacity-50 disabled:cursor-not-allowed disabled:pointer-events-none',
     danger:
       'border border-error-30 text-error-50 active:scale-95 hover:bg-error-50/90 disabled:opacity-50 hover:bg-error-20 disabled:cursor-not-allowed disabled:pointer-events-none',
+    ghost:
+      'border-none text-black  hover:bg-gray-50/10 disabled:opacity-50 disabled:cursor-not-allowed disabled:pointer-events-none',
   },
   sizes: {
     medium: {
@@ -62,5 +64,12 @@ export const buttonTokens = {
       hover: 'hover:bg-error-50/90',
       disabled: 'opacity-50 cursor-not-allowed pointer-events-none ',
     },
+    ghost: {
+      base: 'bg-transparent text-black',
+      active: 'active:brightness-90 transition duration-100',
+      focus: 'focus:ring-gray-50',
+      hover: 'hover:bg-gray-50/10',
+      disabled: 'opacity-50 cursor-not-allowed pointer-events-none ',
+    },
   },
-};
+}

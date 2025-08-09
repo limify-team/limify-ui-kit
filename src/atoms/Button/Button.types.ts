@@ -1,7 +1,7 @@
 import type { StoryObj } from '@storybook/react'
 import type { ButtonHTMLAttributes, FunctionComponent, SVGProps } from 'react'
-import { Button } from './Button'
-import { buttonTokens } from './Button.tokens'
+import type { Button } from './Button'
+import type { buttonTokens } from './Button.tokens'
 
 export type ButtonVariants = keyof (typeof buttonTokens)['variants']
 export type ButtonSizes = keyof (typeof buttonTokens)['sizes']

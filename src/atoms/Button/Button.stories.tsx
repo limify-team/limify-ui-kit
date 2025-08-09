@@ -1,6 +1,6 @@
-import { HomeIcon } from '@/assets/icons';
-import { Button, type ButtonStory, buttonTokens as tokens } from '@/atoms';
-import type { Meta } from '@storybook/react';
+import type { Meta } from '@storybook/react'
+import { HomeIcon } from '@/assets/icons'
+import { Button, type ButtonStory, buttonTokens as tokens } from '@/atoms'
 
 const meta: Meta<typeof Button> = {
   argTypes: {
@@ -76,45 +76,51 @@ const meta: Meta<typeof Button> = {
   title: 'Design System/Atoms/Button',
   component: Button,
   tags: ['autodocs'],
-};
+  parameters: {
+    layout: 'centered',
+  },
+}
 
-export default meta;
+export default meta
 
 export const Default: ButtonStory = {
   args: {
     children: 'Button',
   },
-};
+}
 
 export const Secondary: ButtonStory = {
   args: {
     children: 'Button',
     variant: 'secondary',
-    size: 'medium',
   },
-};
+}
 
 export const Success: ButtonStory = {
   args: {
     children: 'Button',
     variant: 'success',
-    size: 'medium',
   },
-};
+}
 export const Danger: ButtonStory = {
   args: {
     children: 'Button',
     variant: 'danger',
-    size: 'medium',
   },
-};
+}
+export const Ghost: ButtonStory = {
+  args: {
+    children: 'Button',
+    variant: 'ghost',
+  },
+}
 export const OutlinedDefault: ButtonStory = {
   args: {
     children: 'Button',
     outlined: true,
     icon: HomeIcon,
   },
-};
+}
 
 export const OutlinedSecondaryVariant: ButtonStory = {
   args: {
@@ -122,21 +128,21 @@ export const OutlinedSecondaryVariant: ButtonStory = {
     outlined: true,
     variant: 'secondary',
   },
-};
+}
 export const OutlinedDangerVariant: ButtonStory = {
   args: {
     children: 'Button',
     outlined: true,
     variant: 'danger',
   },
-};
+}
 export const OutlinedSuccessVariant: ButtonStory = {
   args: {
     children: 'Button',
     outlined: true,
     variant: 'success',
   },
-};
+}
 
 export const LargeSize: ButtonStory = {
   args: {
@@ -144,35 +150,35 @@ export const LargeSize: ButtonStory = {
     variant: 'primary',
     size: 'large',
   },
-};
+}
 export const SmallSize: ButtonStory = {
   args: {
     children: 'Button',
     variant: 'primary',
     size: 'small',
   },
-};
+}
 
 export const WithIcon: ButtonStory = {
   args: {
     children: 'Button',
     icon: HomeIcon,
   },
-};
+}
 export const IconButton: ButtonStory = {
   args: {
     icon: HomeIcon,
   },
-};
+}
 export const IconButtonOutlined: ButtonStory = {
   args: {
     icon: HomeIcon,
     outlined: true,
   },
-};
+}
 export const Disabled: ButtonStory = {
   args: {
     children: 'Button',
     disabled: true,
   },
-};
+}

@@ -1,7 +1,7 @@
 /* Copyright © Accounting Revolution System (ARS) Group and Affiliates:
    This deliverable is considered Developed Content. */
 
-import type { TypographyTokens } from './types';
+import type { TypographyTokens } from './types'
 
 export const typographyTokens: TypographyTokens = {
   fontFamily: {
@@ -50,33 +50,33 @@ export const typographyTokens: TypographyTokens = {
     },
     headings: {
       h1: {
-        fontSize: '40px',
-        fontWeight: 500,
+        fontSize: '60px',
+        fontWeight: 600,
         lineHeight: 'normal',
       },
       h2: {
-        fontSize: '32px',
-        fontWeight: 500,
+        fontSize: '36px',
+        fontWeight: 600,
         lineHeight: 'normal',
       },
       h3: {
         fontSize: '28px',
-        fontWeight: 500,
+        fontWeight: 600,
         lineHeight: 'normal',
       },
       h4: {
         fontSize: '24px',
-        fontWeight: 500,
+        fontWeight: 600,
         lineHeight: 'normal',
       },
       h5: {
         fontSize: '20px',
-        fontWeight: 500,
+        fontWeight: 600,
         lineHeight: 'normal',
       },
       h6: {
         fontSize: '16px',
-        fontWeight: 500,
+        fontWeight: 600,
         lineHeight: 'normal',
       },
     },
@@ -125,4 +125,4 @@ export const typographyTokens: TypographyTokens = {
       },
     },
   },
-};
+}

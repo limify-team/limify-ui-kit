@@ -1,9 +1,9 @@
-import eslint from '@eslint/js';
-import importPlugin from 'eslint-plugin-import';
-import prettierPlugin from 'eslint-plugin-prettier/recommended';
-import reactHooksPlugin from 'eslint-plugin-react-hooks';
-import reactRefreshPlugin from 'eslint-plugin-react-refresh';
-import { config, configs } from 'typescript-eslint';
+import eslint from '@eslint/js'
+import importPlugin from 'eslint-plugin-import'
+import prettierPlugin from 'eslint-plugin-prettier/recommended'
+import reactHooksPlugin from 'eslint-plugin-react-hooks'
+import reactRefreshPlugin from 'eslint-plugin-react-refresh'
+import { config, configs } from 'typescript-eslint'
 
 export default config(
   {
@@ -65,12 +65,12 @@ export default config(
       'import/order': [
         'error',
         {
-          groups: [
+          'groups': [
             ['builtin', 'external'],
             ['internal', 'parent', 'sibling', 'index'],
           ],
           'newlines-between': 'never',
-          alphabetize: { order: 'asc', caseInsensitive: true },
+          'alphabetize': { order: 'asc', caseInsensitive: true },
         },
       ],
     },
@@ -94,4 +94,4 @@ export default config(
       'no-restricted-syntax': 'off',
     },
   }
-);
+)

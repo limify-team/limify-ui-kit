@@ -1,7 +1,7 @@
-import { cn } from '@/utils/twMerge';
-import { forwardRef } from 'react';
-import { buttonTokens as tokens } from './Button.tokens';
-import { ButtonProps } from './Button.types';
+import { forwardRef } from 'react'
+import { buttonTokens as tokens } from './Button.tokens'
+import type { ButtonProps } from './Button.types'
+import { cn } from '@/utils/twMerge'
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
   (
     {
@@ -18,10 +18,10 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
     },
     ref
   ) => {
-    const variantStyles = tokens.variants[variant];
-    const sizeStyles = tokens.sizes[size];
-    const iconStyles = tokens.icon;
-    const outlinedStyles = tokens.outlined[variant];
+    const variantStyles = tokens.variants[variant]
+    const sizeStyles = tokens.sizes[size]
+    const iconStyles = tokens.icon
+    const outlinedStyles = tokens.outlined[variant]
     return (
       <button
         ref={ref}
@@ -68,6 +68,6 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
           />
         )}
       </button>
-    );
+    )
   }
-);
+)
