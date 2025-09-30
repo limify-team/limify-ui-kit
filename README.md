@@ -1,1 +1,1 @@
-# Limify UIKIT
+# Limify ui-kit
